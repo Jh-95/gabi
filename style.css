@@ -180,6 +180,11 @@ button {
   animation: fade 1.5s ease;
 }
 
+.secret-action {
+  margin-top: 16px;
+  display: inline-block;
+}
+
 /* CORAÇÕES */
 .hearts::before {
   content: "💖 💕 💘 💗 💓";

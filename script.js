@@ -17,7 +17,16 @@ function abrirSegredo() {
 
   if (senha === "hjtem") {
     document.getElementById("segredo").style.display = "block";
+    const botaoInquete = document.getElementById("btn-inquete");
+    if (botaoInquete) {
+      botaoInquete.style.display = "inline-block";
+    }
   } else {
     alert("Senha incorreta 😅 tenta de novo");
   }
+}
+
+function irParaInquete() {
+  const link = "https://forms.gle/SEU_LINK_AQUI";
+  window.open(link, "_blank");
 }
