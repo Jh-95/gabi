@@ -80,6 +80,17 @@ Hoje depois daqui, você vai ser minha vagabunda.
 
     <button id="btn-inquete" class="secret-action" style="display:none" onclick="irParaInquete()">Responder enquete</button>
 
+    <div id="enquete" class="enquete" style="display:none">
+      <h3>Enquete rápida 💌</h3>
+      <p>Escolha uma opção:</p>
+      <label><input type="radio" name="resposta" value="surpresa"> Quero uma surpresa hoje</label>
+      <label><input type="radio" name="resposta" value="musica"> Quero que toque nossa música</label>
+      <label><input type="radio" name="resposta" value="passeio"> Quero um passeio a dois</label>
+      <label><input type="radio" name="resposta" value="carta"> Quero receber uma cartinha</label>
+      <button class="enquete-submit" onclick="enviarEnquete()">Enviar resposta</button>
+      <p id="enquete-resultado" class="enquete-resultado"></p>
+    </div>
+
   </div>
 
   <div class="fireworks"></div>

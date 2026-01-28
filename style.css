@@ -185,6 +185,39 @@ button {
   display: inline-block;
 }
 
+.enquete {
+  margin-top: 18px;
+  padding: 16px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  background: rgba(0,0,0,0.35);
+  display: grid;
+  gap: 8px;
+  text-align: left;
+}
+
+.enquete label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.98rem;
+}
+
+.enquete-submit {
+  justify-self: start;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  background: #ff4d6d;
+  color: #fff;
+  cursor: pointer;
+}
+
+.enquete-resultado {
+  margin-top: 8px;
+  color: #f5d8e3;
+}
+
 /* CORAÇÕES */
 .hearts::before {
   content: "💖 💕 💘 💗 💓";
