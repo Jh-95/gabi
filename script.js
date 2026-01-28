@@ -15,7 +15,7 @@ function tocarMusica() {
 function abrirSegredo() {
   const senha = prompt("Digite a senha 💖");
 
-  if (senha === "3011") {
+  if (senha === "hjtem") {
     document.getElementById("segredo").style.display = "block";
   } else {
     alert("Senha incorreta 😅 tenta de novo");
