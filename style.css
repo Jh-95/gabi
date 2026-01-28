@@ -192,7 +192,7 @@ button {
   border-radius: 10px;
   background: rgba(0,0,0,0.35);
   display: grid;
-  gap: 8px;
+  gap: 12px;
   text-align: left;
 }
 
@@ -201,6 +201,11 @@ button {
   gap: 8px;
   align-items: center;
   font-size: 0.98rem;
+}
+
+.enquete-group p {
+  margin-bottom: 6px;
+  font-weight: 600;
 }
 
 .enquete-submit {

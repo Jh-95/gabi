@@ -82,11 +82,28 @@ Hoje depois daqui, você vai ser minha vagabunda.
 
     <div id="enquete" class="enquete" style="display:none">
       <h3>Enquete rápida 💌</h3>
-      <p>Escolha uma opção:</p>
-      <label><input type="radio" name="resposta" value="surpresa"> Quero uma surpresa hoje</label>
-      <label><input type="radio" name="resposta" value="musica"> Quero que toque nossa música</label>
-      <label><input type="radio" name="resposta" value="passeio"> Quero um passeio a dois</label>
-      <label><input type="radio" name="resposta" value="carta"> Quero receber uma cartinha</label>
+
+      <div class="enquete-group">
+        <p>1) Quantas garrafas de vinho vamos pegar?</p>
+        <label><input type="radio" name="enq1" value="1 garrafa"> 1 garrafa</label>
+        <label><input type="radio" name="enq1" value="2 garrafas"> 2 garrafas</label>
+        <label><input type="radio" name="enq1" value="3 garrafas"> 3 garrafas (mds você quer me dar muito né?)</label>
+      </div>
+
+      <div class="enquete-group">
+        <p>2) Quantas horas vamos pegar?</p>
+        <label><input type="radio" name="enq2" value="2 horas"> 2 horas</label>
+        <label><input type="radio" name="enq2" value="3 horas"> 3 horas</label>
+        <label><input type="radio" name="enq2" value="4 horas"> 4 horas (Mds você realmente quer me dar muito)</label>
+      </div>
+
+      <div class="enquete-group">
+        <p>3) Qual suíte vamos pegar?</p>
+        <label><input type="radio" name="enq3" value="Basica"> Básica</label>
+        <label><input type="radio" name="enq3" value="Intermediaria"> Intermediária</label>
+        <label><input type="radio" name="enq3" value="Top"> Top (Por favor não escolhe essa kkkkkk, só se você for me dar muito mesmo)</label>
+      </div>
+
       <button class="enquete-submit" onclick="enviarEnquete()">Enviar resposta</button>
       <p id="enquete-resultado" class="enquete-resultado"></p>
     </div>

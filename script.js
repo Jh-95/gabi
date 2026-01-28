@@ -39,17 +39,26 @@ function irParaInquete() {
 }
 
 function enviarEnquete() {
-  const selecionada = document.querySelector('input[name="resposta"]:checked');
+  const r1 = document.querySelector('input[name="enq1"]:checked');
+  const r2 = document.querySelector('input[name="enq2"]:checked');
+  const r3 = document.querySelector('input[name="enq3"]:checked');
   const resultado = document.getElementById("enquete-resultado");
-  if (!selecionada) {
-    alert("Escolha uma opção antes de enviar.");
+
+  if (!r1 || !r2 || !r3) {
+    alert("Responda todas as perguntas antes de enviar.");
     return;
   }
-  const radios = document.querySelectorAll('input[name="resposta"]');
-  radios.forEach(r => r.disabled = true);
+
+  [
+    ...document.querySelectorAll('input[name="enq1"]'),
+    ...document.querySelectorAll('input[name="enq2"]'),
+    ...document.querySelectorAll('input[name="enq3"]'),
+  ].forEach(r => r.disabled = true);
+
   const botao = document.querySelector('.enquete-submit');
   if (botao) botao.disabled = true;
+
   if (resultado) {
-    resultado.textContent = "Resposta registrada!";
+    resultado.textContent = "Respostas registradas!";
   }
 }
